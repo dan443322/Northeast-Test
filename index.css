@@ -239,7 +239,7 @@
   background-color: #2461ff;
 }
 .features-content {
-  gap: var(--dl-space-space-threeunits);
+  gap: var(--dl-space-space-unit);
   flex: 1;
   display: flex;
   max-width: 1440px;
@@ -250,6 +250,22 @@
 }
 .features-section {
   position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.features-steps {
+  display: flex;
+  gap: var(--dl-space-space-oneandhalfunits);
+  flex-direction: column;
+}
+.features-number {
+  color: var(--dl-color-gray-white);
+  font-size: var(--dl-size-size-medium);
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 55px;
+  display: flex;
 }
 .features-heading {
   gap: var(--dl-space-space-unit);
@@ -263,11 +279,7 @@
   font-style: normal;
   font-weight: 600;
 }
-.features-icon {
-  width: 20px;
-  align-self: center;
-  object-fit: cover;
-}
+
 .features-text {
   color: rgb(255, 255, 255);
   width: 100%;
@@ -287,7 +299,7 @@
 .about-content {
   gap: var(--dl-space-space-threeunits);
   flex: 1;
-  max-width: 100%;
+  width: 100%;
   display: flex;
   z-index: 98;
   max-width: 1440px;
@@ -796,6 +808,10 @@
   }
   .features-content {
     flex-direction: column;
+    gap: var(--dl-space-space-fourunits);
+  }
+  .features-content > * {
+    gap: var(--dl-space-space-threeunits);
   }
   .features-root-class-name {
     align-self: stretch;
@@ -854,9 +870,6 @@
     padding-left: 0px;
     padding-right: 0px;
   }
-  .home-book-person {
-    width: 50%;
-  }
 
   .home-footer {
     gap: 100px;
@@ -877,6 +890,9 @@
   }
   .home-copyright {
     display: none;
+  }
+  .footer-right {
+    gap: 50px;
   }
 }
 
@@ -924,13 +940,13 @@
     max-width: 70%;
     line-height: 24px;
   }
-  .features-content {
-    padding-left: var(--dl-space-space-oneandhalfunits);
-    padding-right: var(--dl-space-space-oneandhalfunits);
-  }
+
   .features-header {
     font-size: 20px;
     line-height: 24px;
+  }
+  .features-content {
+    gap: var(--dl-space-space-halfunit);
   }
   .features-text,
   .about-text {
@@ -948,9 +964,7 @@
 
   .about-content {
     flex: 1;
-
     align-items: center;
-
     flex-direction: column;
     justify-content: center;
   }
@@ -1047,7 +1061,7 @@
     line-height: 18px;
   }
 }
-@media (max-width: 479px) {
+@media (max-width: 505px) {
   .home-navbar {
     padding: var(--dl-space-space-unit);
   }
@@ -1063,5 +1077,13 @@
   }
   .home-text {
     max-width: 100%;
+  }
+  .features-content {
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .footer-right {
+    flex-direction: column;
+    gap: 50px;
   }
 }

@@ -12,7 +12,6 @@
   --dl-size-size-medium: 96px;
   --dl-size-size-xlarge: 192px;
   --dl-size-size-xsmall: 16px;
-  --dl-space-space-unit: 16px;
   --dl-color-primary-100: #003eb3;
   --dl-color-primary-300: #0074f0;
   --dl-color-primary-500: #14a9ff;
@@ -33,6 +32,8 @@
   --dl-space-space-fourunits: 64px;
   --dl-space-space-threeunits: 48px;
   --dl-space-space-oneandhalfunits: 24px;
+  --dl-space-space-unit: 16px;
+  --dl-space-space-oneunit: 12px;
 
   --black-background-gradient-1: radial-gradient(
       circle at 99% 33%,
@@ -96,7 +97,7 @@
 }
 
 .quick-links {
-  gap: var(--dl-space-space-unit);
+  gap: var(--dl-space-space-oneunit);
   width: 100%;
   cursor: pointer;
   display: flex;
