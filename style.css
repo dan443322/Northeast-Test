@@ -1,0 +1,164 @@
+:root {
+  --dl-color-gray-500: #595959;
+  --dl-color-gray-700: #999999;
+  --dl-color-gray-900: #d9d9d9;
+  --dl-size-size-large: 144px;
+  --dl-size-size-small: 48px;
+  --dl-color-danger-300: #a22020;
+  --dl-color-danger-500: #bf2626;
+  --dl-color-danger-700: #e14747;
+  --dl-color-gray-black: #000000;
+  --dl-color-gray-white: #ffffff;
+  --dl-size-size-medium: 96px;
+  --dl-size-size-xlarge: 192px;
+  --dl-size-size-xsmall: 16px;
+  --dl-space-space-unit: 16px;
+  --dl-color-primary-100: #003eb3;
+  --dl-color-primary-300: #0074f0;
+  --dl-color-primary-500: #14a9ff;
+  --dl-color-primary-700: #85dcff;
+  --dl-color-success-300: #199033;
+  --dl-color-success-500: #32a94c;
+  --dl-color-success-700: #4cc366;
+  --dl-size-size-xxlarge: 288px;
+  --dl-size-size-maxwidth: 1400px;
+  --dl-radius-radius-round: 50%;
+  --dl-space-space-halfunit: 8px;
+  --dl-space-space-sixunits: 96px;
+  --dl-space-space-twounits: 32px;
+  --dl-radius-radius-radius2: 2px;
+  --dl-radius-radius-radius4: 4px;
+  --dl-radius-radius-radius8: 8px;
+  --dl-space-space-fiveunits: 80px;
+  --dl-space-space-fourunits: 64px;
+  --dl-space-space-threeunits: 48px;
+  --dl-space-space-oneandhalfunits: 24px;
+
+  --black-background-gradient-1: radial-gradient(
+      circle at 99% 33%,
+      hsla(235, 0%, 48%, 0.03) 0%,
+      hsla(235, 0%, 48%, 0.03) 37%,
+      transparent 37%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 46% 16%,
+      hsla(235, 0%, 48%, 0.03) 0%,
+      hsla(235, 0%, 48%, 0.03) 43%,
+      transparent 43%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 99% 25%,
+      hsla(235, 0%, 48%, 0.03) 0%,
+      hsla(235, 0%, 48%, 0.03) 22%,
+      transparent 22%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 57% 88%,
+      hsla(235, 0%, 48%, 0.03) 0%,
+      hsla(235, 0%, 48%, 0.03) 86%,
+      transparent 86%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 82% 78%,
+      hsla(235, 0%, 48%, 0.03) 0%,
+      hsla(235, 0%, 48%, 0.03) 22%,
+      transparent 22%,
+      transparent 100%
+    ),
+    linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
+}
+
+.button-main {
+  gap: var(--dl-space-space-halfunit);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: flex;
+  font-style: normal;
+  transition: 0.3s;
+  align-items: center;
+  font-family: Inter;
+  font-weight: 600;
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  border-radius: 56px;
+  padding-right: var(--dl-space-space-oneandhalfunits);
+  flex-direction: row;
+  padding-bottom: var(--dl-space-space-unit);
+  justify-content: center;
+  background-color: rgb(36, 97, 255);
+}
+.button-main:hover {
+  opacity: 0.75;
+}
+
+.quick-links {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  transition: 0.3s;
+  align-items: flex-start;
+  border-color: #ffffff;
+  flex-direction: column;
+  border-right-width: 1px;
+}
+.quick-links:hover {
+  opacity: 0.5;
+}
+
+.read-more {
+  gap: var(--dl-space-space-halfunit);
+  cursor: pointer;
+  display: flex;
+  transition: 0.3s;
+  align-items: center;
+  flex-direction: row;
+}
+.read-more:hover {
+  opacity: 0.5;
+}
+.button-white {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.social {
+  width: 40px;
+  cursor: pointer;
+  height: 40px;
+  display: flex;
+  padding: var(--dl-space-space-halfunit);
+  transition: 0.3s;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(236, 233, 234, 0.2);
+}
+.social:hover {
+  opacity: 0.5;
+}
+.legal-link {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.3s;
+}
+.legal-link:hover {
+  opacity: 0.5;
+}
+
+@keyframes fade-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
