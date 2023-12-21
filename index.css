@@ -627,13 +627,11 @@
 
 .home-footer {
   width: 100%;
+  display: flex;
+  position: relative;
   align-items: center;
+  flex-direction: column;
   background-image: var(--black-background-gradient-1);
-
-  padding-top: 120px;
-  padding-left: var(--dl-space-space-fiveunits);
-  padding-right: var(--dl-space-space-fiveunits);
-  padding-bottom: var(--dl-space-space-fiveunits);
 }
 
 .footer-max {
@@ -644,6 +642,11 @@
   flex-direction: row;
 
   justify-content: space-between;
+
+  padding-top: 120px;
+  padding-left: var(--dl-space-space-fiveunits);
+  padding-right: var(--dl-space-space-fiveunits);
+  padding-bottom: var(--dl-space-space-fiveunits);
 }
 .footer-left {
   gap: var(--dl-space-space-threeunits);
