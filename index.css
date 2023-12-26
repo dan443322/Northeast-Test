@@ -17,10 +17,11 @@
   flex-direction: column;
 }
 
-.home-navbar {
+header {
+  position: relative;
+  z-index: 1000;
   width: 100%;
   display: flex;
-  z-index: 100;
   max-width: 1440px;
   align-items: center;
   padding-top: var(--dl-space-space-oneandhalfunits);
@@ -58,6 +59,9 @@
 }
 .nav-link:hover {
   opacity: 0.5;
+}
+.nav-link.active {
+  color: var(--dl-color-primary-500);
 }
 
 .nav-right {
@@ -520,6 +524,7 @@
 .home-text19 {
   width: 100%;
   font-size: 18px;
+  min-width: 270px;
   max-width: 385px;
   align-self: flex-start;
   line-height: 27px;
@@ -555,6 +560,8 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  height: 200px;
+  max-width: 350px;
 }
 .practice-header {
   font-size: 30px;
@@ -754,9 +761,6 @@
   .home-hero {
     flex: 1;
     height: 0px;
-  }
-  .home-navbar {
-    z-index: 1000;
   }
 
   .nav-right,
