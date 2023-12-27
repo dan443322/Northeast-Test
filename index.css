@@ -82,7 +82,10 @@ header {
   justify-content: center;
 }
 
-.nav-right-image {
+.nav-right-image,
+.phone-icon,
+.call-icon,
+.location-pin-icon {
   width: 18px;
   object-fit: cover;
 }
@@ -376,6 +379,47 @@ header {
   line-height: 27px;
 }
 
+.office-summary {
+  gap: var(--dl-space-space-threeunits);
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+}
+.contact-summary {
+  width: 100%;
+  max-width: 250px;
+  line-height: 27px;
+}
+.contact-summary > * {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--dl-space-space-oneunit);
+}
+.office-location {
+  min-width: 220px;
+}
+.office-hours {
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  max-width: 250px;
+  min-width: 132px;
+  line-height: 27px;
+  align-items: center;
+  gap: var(--dl-space-space-halfunit);
+}
+.office-hours ul li {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.contact-summary ul > :nth-child(1),
+.contact-summary ul > :nth-child(2),
+.schedule-header {
+  font-weight: 600;
+}
 .home-blog {
   gap: 120px;
   width: 100%;
@@ -771,11 +815,14 @@ header {
   .nav-burger-menu {
     display: flex;
     padding: var(--dl-space-space-unit);
+    border: 2px solid var(--dl-color-gray-white);
     border-radius: var(--dl-radius-radius-round);
     background-color: #2461ff;
     cursor: pointer;
     fill: white;
     cursor: pointer;
+    position: fixed;
+    right: var(--dl-size-size-small);
   }
 
   .home-main {
@@ -923,13 +970,19 @@ header {
     border-width: 0px;
     background-color: #ffffff;
   }
-  .about-header {
-    font-size: 50px;
-    max-width: 100%;
+
+  .about-content {
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
-  .about-text {
-    font-size: 20px;
-    max-width: 100%;
+  .left-about {
+    min-width: 420px;
+    width: 100%;
+    /* align-items: center; */
+    /* display: flex; */
+    justify-content: center;
   }
 }
 
@@ -938,6 +991,9 @@ header {
     padding-left: var(--dl-space-space-oneandhalfunits);
     padding-right: var(--dl-space-space-oneandhalfunits);
     padding-bottom: var(--dl-space-space-unit);
+  }
+  .nav-burger-menu {
+    right: var(--dl-size-size-xsmall);
   }
 
   .home-header {
@@ -975,13 +1031,6 @@ header {
 
   .about-header {
     font-size: 30px;
-  }
-
-  .about-content {
-    flex: 1;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
   }
 
   .home-blog {
