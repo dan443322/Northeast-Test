@@ -676,6 +676,118 @@ header {
   text-decoration: none;
 }
 
+.home-location-section {
+  width: 100%;
+  height: 98vh;
+  max-width: 1440px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.location-background {
+  background: var(--dl-color-primary-300);
+  width: 100%;
+}
+.location-top {
+  padding-left: var(--dl-space-space-fiveunits);
+  display: flex;
+}
+.clinic-contents {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: var(--dl-space-space-oneandhalfunits);
+  padding-right: var(--dl-space-space-oneunit);
+}
+.clinic-contents > :nth-child(1),
+.clinic-contents > :nth-child(2) {
+  padding-top: var(--dl-space-space-unit);
+}
+.clinic-header {
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  color: var(--dl-color-gray-white);
+}
+.clinic-content2 {
+  gap: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  flex-wrap: wrap;
+}
+.phone-numbers,
+.address,
+.hours-schedule {
+  color: rgb(255, 255, 255);
+  font-style: normal;
+  font-weight: normal;
+  line-height: 21px;
+}
+
+.clinic-image {
+  align-items: center;
+  display: flex;
+  position: relative;
+  right: 0;
+}
+
+.clinic-image img {
+  object-fit: cover;
+  height: 330px;
+  width: 50vw;
+}
+.location-bottom {
+  max-width: 1440px;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid white;
+  z-index: 10;
+}
+.location-bottom iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.hours-info,
+.phone-info {
+  min-width: 150px;
+  max-width: 230px;
+}
+.address-info {
+  max-width: 230px;
+  min-width: 230px;
+}
+
+.home-quote-section {
+  width: 100%;
+  min-height: 40vh;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: var(--dl-space-space-fiveunits);
+}
+.home-quote-section div {
+  display: inherit;
+  flex-direction: column;
+  max-width: 600px;
+  position: inherit;
+}
+.last-quote {
+  width: 100%;
+  font-size: 18px;
+  max-width: 600px;
+  line-height: 27px;
+}
+.last-quote-author span {
+  position: absolute;
+  right: 0;
+}
+
 .home-footer {
   width: 100%;
   display: flex;
@@ -689,9 +801,7 @@ header {
   width: 100%;
   max-width: 1440px;
   display: flex;
-
   flex-direction: row;
-
   justify-content: space-between;
 
   padding-top: 120px;
@@ -751,7 +861,12 @@ header {
   align-items: flex-start;
   flex-direction: row;
 }
-.footer-right > * {
+.footer-right > *,
+.phone-info,
+.phone-numbers,
+.address-info,
+.hours-info,
+.hours-info div {
   gap: var(--dl-space-space-unit);
   flex: 1;
   width: 100%;
@@ -766,7 +881,10 @@ header {
   align-items: flex-start;
   flex-direction: column;
 } */
-.footer-header {
+.footer-header,
+.phone-header,
+.address-header,
+.hours-header {
   color: rgb(255, 255, 255);
   font-style: normal;
   font-weight: 600;
@@ -984,6 +1102,18 @@ header {
     /* display: flex; */
     justify-content: center;
   }
+
+  .location-top {
+    padding-right: var(--dl-space-space-fiveunits);
+  }
+  .clinic-image {
+    display: none;
+  }
+
+  .clinic-content2 {
+    width: 100%;
+    justify-content: space-evenly;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1096,19 +1226,20 @@ header {
     padding-right: var(--dl-space-space-oneandhalfunits);
     padding-bottom: var(--dl-space-space-fourunits);
   }
-  .home-heading13 {
+  .home-heading13,
+  .clinic-header {
     font-size: 30px;
     line-height: 36px;
   }
-  .home-caption8 {
+  .home-caption8,
+  .phone-info,
+  .address-info,
+  .hours-info {
     font-size: 14px;
     line-height: 21px;
   }
   .home-types {
     gap: var(--dl-space-space-oneandhalfunits);
-  }
-  .home-book-person {
-    width: 80%;
   }
 
   .home-footer > * {
@@ -1123,6 +1254,14 @@ header {
   .footer-logo-text {
     font-size: 12px;
     line-height: 18px;
+  }
+
+  .clinic-contents {
+    gap: 0;
+  }
+  .clinic-content2 {
+    width: 100%;
+    justify-content: flex-start;
   }
 }
 @media (max-width: 610px) {
@@ -1148,8 +1287,17 @@ header {
   .home-text {
     max-width: 100%;
   }
-  .features-content {
+  .features-content,
+  .clinic-contents {
     padding-left: var(--dl-space-space-oneandhalfunits);
     padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+
+  .location-top {
+    padding: 0;
+  }
+
+  .last-quote {
+    padding-bottom: var(--dl-space-space-oneandhalfunits);
   }
 }
