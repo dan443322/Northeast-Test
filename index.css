@@ -383,6 +383,7 @@ header {
   width: 100%;
   display: flex;
   align-items: stretch;
+  margin-bottom: var(--dl-space-space-twounits);
 }
 .contact-summary {
   width: 100%;
