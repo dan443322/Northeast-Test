@@ -582,7 +582,7 @@ header {
 .home-grid1 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Adjust as needed */
+  justify-content: space-evenly;
   align-items: stretch; /* Ensures children stretch to match height */
 }
 .home-practice-wrapper {
@@ -674,6 +674,137 @@ header {
 }
 .home-book-person {
   text-decoration: none;
+}
+
+.home-reviews-section {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+}
+.home-reviews {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  max-width: 1440px;
+  padding-left: var(--dl-space-space-fiveunits);
+  padding-right: var(--dl-space-space-fiveunits);
+  gap: var(--dl-space-space-unit);
+  justify-content: center;
+}
+.reviews-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reviews-heading {
+  font-size: 56px;
+  max-width: 600px;
+  align-self: flex-start;
+  font-style: normal;
+  font-weight: 600;
+}
+.reviews-content-outer {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: min-content;
+  height: min-content;
+  justify-content: center;
+  margin-left: 36px;
+  padding: 0 var(--dl-space-space-twounits);
+  z-index: 9;
+}
+.white-transparent1 {
+  left: 30px;
+  background: linear-gradient(
+    to right,
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0)
+  );
+}
+.white-transparent2 {
+  right: 30px;
+  background: linear-gradient(
+    to left,
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0)
+  );
+}
+.white-transparent1,
+.white-transparent2 {
+  position: absolute;
+
+  min-height: 100%;
+  width: 50px;
+  z-index: 9;
+}
+.left-review-arrow {
+  position: absolute;
+  left: var(--dl-space-space-oneunit);
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+  border-radius: 100%;
+  border: 2px solid var(--dl-color-gray-white);
+  z-index: 10;
+  opacity: 0;
+}
+.right-review-arrow {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 100%;
+  border: 2px solid var(--dl-color-gray-white);
+  z-index: 10;
+}
+.scroll-arrow {
+  width: 35px;
+  object-fit: cover;
+  opacity: 0.1;
+}
+
+.reviews-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  width: 645px;
+  height: 100%;
+  padding: var(--dl-space-space-twounits);
+}
+.reviews-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--dl-space-space-oneunit);
+  border-top: 5px solid var(--dl-color-primary-300);
+  padding: var(--dl-space-space-oneandhalfunits);
+  box-shadow: var(--black-box-shadow-minimal-gradient);
+  height: min-content;
+  max-width: min-content;
+  margin: 0 var(--dl-space-space-oneunit);
+  cursor: pointer;
+  animation: 5s slide infinite linear;
+}
+.reviews-box-icon img {
+  width: 45px;
+  object-fit: cover;
+}
+.reviews-box-content1 {
+  width: 230px;
+}
+.review-statement {
+  opacity: 0.8;
+}
+.review-statement,
+.review-author {
+  width: 100%;
+  font-size: 18px;
+  line-height: 27px;
 }
 
 .home-location-section {
@@ -943,7 +1074,8 @@ header {
     right: var(--dl-size-size-small);
   }
 
-  .home-main {
+  .home-main,
+  .home-reviews {
     flex-direction: column;
   }
 
@@ -968,6 +1100,7 @@ header {
     justify-content: flex-end;
     z-index: 100;
   }
+
   .home-background {
     left: 0px;
     width: 100%;
@@ -1051,6 +1184,10 @@ header {
     padding-right: 0px;
   }
 
+  .reviews-content-outer {
+    transform: scale(1.1);
+  }
+
   .home-footer > * {
     gap: 100px;
     align-items: flex-start;
@@ -1113,6 +1250,11 @@ header {
   .clinic-content2 {
     width: 100%;
     justify-content: space-evenly;
+  }
+
+  .home-reviews {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -1242,6 +1384,26 @@ header {
     gap: var(--dl-space-space-oneandhalfunits);
   }
 
+  .home-reviews-section {
+    align-items: normal;
+  }
+  .home-reviews {
+    gap: var(--dl-space-space-threeunits);
+  }
+  .reviews-header {
+    display: flex;
+    justify-content: center;
+  }
+  .reviews-heading {
+    font-size: 32px;
+    max-width: 70%;
+    line-height: 38px;
+    text-align: center;
+  }
+  .reviews-content {
+    width: 334px;
+  }
+
   .home-footer > * {
     padding-top: var(--dl-space-space-fourunits);
     padding-left: var(--dl-space-space-oneandhalfunits);
@@ -1287,6 +1449,11 @@ header {
   .home-text {
     max-width: 100%;
   }
+
+  .reviews-content-outer {
+    transform: scale(1);
+  }
+
   .features-content,
   .clinic-contents {
     padding-left: var(--dl-space-space-oneandhalfunits);
