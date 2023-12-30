@@ -39,6 +39,7 @@ ul {
 
 button {
   background-color: transparent;
+  transition: 0.2s all ease-in-out;
 }
 
 button,
@@ -302,5 +303,44 @@ html {
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes luhag {
+  0% {
+    transform: translateY(0);
+  }
+  1% {
+    transform: translateY(-4px);
+  }
+  2% {
+    transform: translateY(3px);
+  }
+  3% {
+    transform: translateY(-4px);
+  }
+  5% {
+    transform: translateY(3px);
+  }
+  7% {
+    transform: translateY(-2px);
+  }
+  10% {
+    transform: translateY(1px);
+  }
+  11% {
+    transform: translateY(-2px);
+  }
+  15% {
+    transform: translateY(2px);
+  }
+  17% {
+    transform: translateY(-1px);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
