@@ -28,6 +28,13 @@
     <script src="./scripts/navEffects.js" defer></script>
     <script src="./scripts/reviewsScript.js" defer></script>
 
+    <!-- splidejs -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+        integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+        integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" crossorigin="anonymous">
+
+
 </head>
 
 <body>
@@ -630,89 +637,88 @@
                 <div class="reviews-header">
                     <h2 class="reviews-heading">Thank You for the honest Reviews</h2>
                 </div>
-                <div class="reviews-content-outer">
-                    <div class="white-transparent1"></div>
-                    <div class="white-transparent2"></div>
-                    <div class="left-review-arrow">
-                        <img src="resources/Icons/right-arrow-svgrepo-com.svg" alt="" class="scroll-arrow">
+                <div class="splide reviews-content-outer" id="splide">
+
+                    <div class="splide__track">
+                        <div class="splide__list reviews-content">
+                            <div class="splide__slide reviews-box">
+                                <div class="reviews-box-icon"><img src="resources/Icons/quote-svgrepo-com.svg" alt=""
+                                        class="quote-icon"></div>
+                                <div class="reviews-box-content1">
+                                    <p class="review-statement">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Sint
+                                        temporibus repellendus dolor quos dolores perspiciatis tenetur, assumenda
+                                        aspernatur
+                                        et
+                                        laudantium.</p>
+                                </div>
+                                <div class="reviews-box-content2">
+                                    <span class="review-author">-Someone1
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="splide__slide reviews-box">
+                                <div class="reviews-box-icon"><img src="resources/Icons/quote-svgrepo-com.svg" alt=""
+                                        class="quote-icon"></div>
+                                <div class="reviews-box-content1">
+                                    <p class="review-statement">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Dicta
+                                        officia quae voluptates id ullam odio atque eaque vitae quaerat saepe rem iure
+                                        beatae
+                                        soluta eius, iusto placeat architecto ab? Omnis.</p>
+                                </div>
+                                <div class="reviews-box-content2">
+                                    <span class="review-author">-Someone2
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="splide__slide reviews-box">
+                                <div class="reviews-box-icon"><img src="resources/Icons/quote-svgrepo-com.svg" alt=""
+                                        class="quote-icon"></div>
+                                <div class="reviews-box-content1">
+                                    <p class="review-statement">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Reiciendis voluptates aliquam nostrum, repellendus ipsum delectus.</p>
+                                </div>
+                                <div class="reviews-box-content2">
+                                    <span class="review-author">-Someone
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="splide__slide reviews-box">
+                                <div class="reviews-box-icon"><img src="resources/Icons/quote-svgrepo-com.svg" alt=""
+                                        class="quote-icon"></div>
+                                <div class="reviews-box-content1">
+                                    <p class="review-statement">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Reiciendis voluptates aliquam nostrum, repellendus ipsum delectus.</p>
+                                </div>
+                                <div class="reviews-box-content2">
+                                    <span class="review-author">-Someone3
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="splide__slide reviews-box">
+                                <div class="reviews-box-icon"><img src="resources/Icons/quote-svgrepo-com.svg" alt=""
+                                        class="quote-icon"></div>
+                                <div class="reviews-box-content1">
+                                    <p class="review-statement">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Dicta
+                                        officia quae voluptates id ullam odio atque eaque vitae quaerat saepe rem iure
+                                        beatae
+                                        soluta eius, iusto placeat architecto ab? Omnis.</p>
+                                </div>
+                                <div class="reviews-box-content2">
+                                    <span class="review-author">-Someone4
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-
-                    <div class="reviews-content">
-                        <div class="reviews-box">
-                            <div class="reviews-box-icon"><img src="resources/Icons/quote-svgrepo-com.svg" alt=""
-                                    class="quote-icon"></div>
-                            <div class="reviews-box-content1">
-                                <p class="review-statement">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Sint
-                                    temporibus repellendus dolor quos dolores perspiciatis tenetur, assumenda aspernatur
-                                    et
-                                    laudantium.</p>
-                            </div>
-                            <div class="reviews-box-content2">
-                                <span class="review-author">-Someone1
-                                </span>
-                            </div>
-                        </div>
-                        <div class="reviews-box">
-                            <div class="reviews-box-icon"><img src="resources/Icons/quote-svgrepo-com.svg" alt=""
-                                    class="quote-icon"></div>
-                            <div class="reviews-box-content1">
-                                <p class="review-statement">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Dicta
-                                    officia quae voluptates id ullam odio atque eaque vitae quaerat saepe rem iure
-                                    beatae
-                                    soluta eius, iusto placeat architecto ab? Omnis.</p>
-                            </div>
-                            <div class="reviews-box-content2">
-                                <span class="review-author">-Someone2
-                                </span>
-                            </div>
-                        </div>
-                        <div class="reviews-box">
-                            <div class="reviews-box-icon"><img src="resources/Icons/quote-svgrepo-com.svg" alt=""
-                                    class="quote-icon"></div>
-                            <div class="reviews-box-content1">
-                                <p class="review-statement">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Reiciendis voluptates aliquam nostrum, repellendus ipsum delectus.</p>
-                            </div>
-                            <div class="reviews-box-content2">
-                                <span class="review-author">-Someone
-                                </span>
-                            </div>
-                        </div>
-                        <div class="reviews-box">
-                            <div class="reviews-box-icon"><img src="resources/Icons/quote-svgrepo-com.svg" alt=""
-                                    class="quote-icon"></div>
-                            <div class="reviews-box-content1">
-                                <p class="review-statement">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Reiciendis voluptates aliquam nostrum, repellendus ipsum delectus.</p>
-                            </div>
-                            <div class="reviews-box-content2">
-                                <span class="review-author">-Someone3
-                                </span>
-                            </div>
-                        </div>
-                        <div class="reviews-box">
-                            <div class="reviews-box-icon"><img src="resources/Icons/quote-svgrepo-com.svg" alt=""
-                                    class="quote-icon"></div>
-                            <div class="reviews-box-content1">
-                                <p class="review-statement">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Dicta
-                                    officia quae voluptates id ullam odio atque eaque vitae quaerat saepe rem iure
-                                    beatae
-                                    soluta eius, iusto placeat architecto ab? Omnis.</p>
-                            </div>
-                            <div class="reviews-box-content2">
-                                <span class="review-author">-Someone4
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="right-review-arrow">
-                        <img src="resources/Icons/right-arrow-svgrepo-com.svg" alt="" class="scroll-arrow">
-                    </div>
                 </div>
+
             </div>
         </section>
 
