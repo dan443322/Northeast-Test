@@ -14,11 +14,18 @@ function scrollFunction() {
     document.body.scrollTop > showButtontoTop ||
     document.documentElement.scrollTop > showButtontoTop
   ) {
-    setTimeout(
-      (toTopImage.style.animation = "luhag 6s infinite ease-in-out"),
-      100
-    );
-    mybutton.style.transform = "translateX(0px)";
+    let currentAnimation = window
+      .getComputedStyle(toTopImage)
+      .getPropertyValue("animation");
+    if (currentAnimation === "luhag 6s infinite ease-in-out") {
+      // Do nothing or break the code
+      return;
+    } else {
+      setTimeout(function () {
+        toTopImage.style.animation = "luhag 6s infinite ease-in-out";
+      }, 100);
+      mybutton.style.transform = "translateX(0px)";
+    }
   } else {
     toTopImage.style.animation = "";
     mybutton.style.transform = "translateX(100px)";
@@ -33,3 +40,12 @@ function backToTop() {
   document.documentElement.scrollTop = 0;
   afterNavClick();
 }
+
+document.addEventListener("contextmenu", function (event) {
+  var targetElement = event.target;
+
+  // Check if the right-click occurred on an image
+  if (targetElement.tagName === "IMG") {
+    event.preventDefault();
+  }
+});
