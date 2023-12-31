@@ -1533,8 +1533,8 @@ header {
 }
 
 .preloader-bg {
-  min-width: 100vw;
-  height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
   display: grid;
   place-items: center;
   background-color: #e7e7e7;
