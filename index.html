@@ -25,13 +25,15 @@
         data-tag="font" />
 
 
+    <script src="./scripts/preloadwebflow.js"></script>
     <script src="./scripts/navEffects.js" defer></script>
     <script src="./scripts/reviewsScript.js" defer></script>
     <script src="./scripts/promtToLinks.js" defer></script>
     <script src="./scripts/otherScripts.js" defer></script>
+
     <!-- splidejs -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
-        integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
+        integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
         integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" crossorigin="anonymous">
 
@@ -39,9 +41,13 @@
 </head>
 
 <body>
+    <div class="preloader-bg" id="preloading">
+        <div class="preloader"><img src="resources/external/blue-loading-animated.gif" alt=""></div>
+    </div>
     <link href="./index.css" rel="stylesheet" />
     <div class="home-container">
-        <div class="home-background home-background1"></div>
+        <div class="home-background home-background1">
+        </div>
         <header class="home-navbar" id="top-nav">
             <div class="nav-left">
                 <a href="index.html"><img alt="NortEast Dental Clinic Logo" src="resources/Branding/Northeast-logo1.svg"
@@ -74,9 +80,9 @@
                 <img src="resources/Icons/menu-burger-horizontal-svgrepo-com.svg" alt="" class="burger-icon">
             </div>
             <div class="home-mobile-menu">
-                <div data-role="Nav" class="mobile-nav">
+                <div class="mobile-nav">
 
-                    <nav data-role="Nav" class="mobile-links">
+                    <nav class="mobile-links">
                         <a href="#home" class="nav-link" onclick="backToTop()">Home</a>
                         <a href="#about" class="nav-link" onclick="afterNavClick()">About Us</a>
                         <a href="#blog" class="nav-link" onclick="afterNavClick()">Blog</a>
@@ -100,8 +106,9 @@
             <div class="home-main">
                 <div class="home-content">
                     <div class="home-heading01">
-                        <h1 class="home-header">NorthEast Dental Clinic</h1>
-                        <p class="home-caption ">
+                        <h1 class="home-header">NorthEast
+                            Dental Clinic</h1>
+                        <p class="home-caption">
                             <span class="home-text">
                                 We aim to provide the best and most appropriate dental
                                 treatment for each individual.
@@ -796,7 +803,7 @@
                                     alt="Facebook Page" src="resources/Icons/facebook.svg" class="social-image" /></a>
                         </div>
                         <div class="social">
-                            <a href="https://www.facebook.com/northeastdental2020" target="_blank"><img alt="Gmail"
+                            <a href="mailto:northeastdental2020@gmail.com" target="_blank"><img alt="Gmail"
                                     src="resources/Icons/gmail-icon.svg" class="social-image" /></a>
                         </div>
                         <div class="social">

@@ -7,7 +7,7 @@ var promptMessage1 =
 var fbServiceLink = "https://www.facebook.com/northeastdental2020/services";
 var message2 = "Proceed?";
 
-var mailtoLink = "mailto:example@example.com";
+var mailtoLink = "mailto:northeastdental2020@gmail.com";
 var mailtoMessage = "Send us an email?";
 
 var phoneLink1 = "tel:+639616349939";
@@ -21,6 +21,6 @@ function confirmNewTab(link, message) {
     afterNavClick();
     window.open(link, "_blank");
   } else {
-    // User clicked "Cancel" or closed the dialog
+    // clicked "Cancel" or closed the dialog
   }
 }
