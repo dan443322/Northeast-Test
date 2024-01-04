@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="resources/Icons/Northeast-Dental-FavIcon-large.svg">
+    <title>NorthEeast Dental Clinic</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+
+    <meta property="og:title" content="NortEeast Dental Clinic">
+    <meta property="og:description"
+        content="We aim to provide the best and most appropriate dental treatment for each individual.">
+    <!-- <meta property="og:image" content="URL to a large image">
+      <meta property="og:url" content="URL of the page"> -->
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        data-tag="font" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+        data-tag="font" />
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.css">
+    <style data-tag="reset-style-sheet">
+
+    </style>
+</head>
+
+<body>
+    <link href="index.css" rel="stylesheet" />
+    <div class="home-container">
+        <div class="home-background home-background1"></div>
+        <header class="home-navbar">
+            <div class="nav-left">
+                <img alt="NortEast Dental Clinic Logo" src="resources/Branding/Northeast-logo1.svg" class="nav-logo" />
+                <nav id="topNavbar" class="nav-links">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#schedule" class="nav-link">Contact</a>
+                </nav>
+            </div>
+            <div class="nav-right">
+                <a href="tel:(032) 505-7628">
+                    <button class="nav-right-phone-calendar button">
+                        <img alt="image" src="resources/Icons/phone.svg" class="nav-right-image" />
+                        <span class="nav-right-text">
+                            <span>(032) 505-7628</span>
+                            <br />
+                        </span>
+                    </button></a>
+                <a href="https://www.facebook.com/northeastdental2020/services" target="_blank">
+                    <button class="nav-right-phone-calendar button button-main">
+                        <img alt="image" src="resources/Icons/calendar.svg" class="nav-right-image" />
+                        <span class="nav-right-text">Book an appointment</span>
+                    </button></a>
+            </div>
+            <div class="nav-burger-menu" onclick="toggleImageAndDiv()">
+                <img src="resources/Icons/menu-burger-horizontal-svgrepo-com.svg" alt="" class="burger-icon">
+            </div>
+            <div class="home-mobile-menu">
+                <div data-role="Nav" class="mobile-nav">
+
+                    <nav data-role="Nav" class="mobile-links">
+                        <a href="#home" class="nav-link" onclick="afterNavClick()">Home</a>
+                        <a href="#about" class="nav-link" onclick="afterNavClick()">About Us</a>
+                        <a href="#blog" class="nav-link" onclick="afterNavClick()">Blog</a>
+                        <a href="#services" class="nav-link" onclick="afterNavClick()">Services</a>
+                        <a href="#schedule" class="nav-link" onclick="afterNavClick()">Contact Us</a>
+
+                    </nav>
+
+                    <a href="https://www.facebook.com/northeastdental2020/services" target="_blank"><button
+                            class="home-book1 button button-main" onclick="afterNavClick()">
+                            <img alt="image" src="resources/Icons/calendar.svg" class="home-image09" />
+                            <span class="home-text14">Book an appointment</span>
+                        </button></a>
+                </div>
+            </div>
+        </header>
+
+
+        <section class="home-hero" id="home">
+
+            <div class="home-main">
+                <div class="home-content">
+                    <div class="home-heading01">
+                        <h1 class="home-header">NorthEast Dental Clinic</h1>
+                        <p class="home-caption">
+                            <span class="home-text">
+                                We aim to provide the best and most appropriate dental
+                                treatment for each individual.
+                            </span>
+                            <br />
+                        </p>
+                    </div>
+                    <a href="#about"><button class="button button-main home-book2">
+                            <span>Learn More</span>
+                        </button></a>
+                </div>
+                <div class="doctor-image1">
+                    <img alt="Doctor" src="resources/Doctors/doctor-image-1500w.png" class="home-image11"
+                        style="height: 560px; width: auto; object-fit: cover;" />
+                </div>
+            </div>
+
+            <div class="home-background"></div>
+        </section>
+
+
+        <div class="home-features">
+            <div class="features-content">
+
+                <div class="features-section quick-links features-root-class-name">
+                    <div>
+                        <span class="features-number">1</span>
+                    </div>
+                    <div class="features-steps">
+                        <div class="features-heading">
+                            <h3 class="features-header">
+                                <span>Book for Dental Consultation</span>
+                            </h3>
+                        </div>
+                        <p class="features-text">
+                            <span>
+                                Schedule your dental consultation online. Choose a
+                                convenient date and time.
+                            </span>
+                        </p>
+                        <div class="features-divider"></div>
+                    </div>
+                </div>
+                <div class="features-section quick-links features-root-class-name">
+                    <div>
+                        <span class="features-number">2</span>
+                    </div>
+                    <div class="features-steps">
+                        <div class="features-heading">
+                            <h3 class="features-header">
+                                <span>Personalized Assessment</span>
+                            </h3>
+
+                        </div>
+                        <p class="features-text">
+                            <span>
+                                Experience a comprehensive dental assessment and shape your
+                                personalized treatment plan through discussions with us.
+                            </span>
+                        </p>
+                        <div class="features-divider"></div>
+                    </div>
+                </div>
+                <div class="features-section quick-links features-root-class-name">
+
+                    <div>
+                        <span class="features-number">3</span>
+                    </div>
+                    <div class="features-steps">
+                        <div class="features-heading">
+                            <h3 class="features-header">
+                                <span>Begin Your Dental Wellness</span>
+                            </h3>
+
+                        </div>
+                        <p class="features-text">
+                            <span>
+                                Get a personalized treatment plan and ongoing support from
+                                us after your consultation.
+                            </span>
+                        </p>
+
+                        <div class="features-divider"></div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <section class="home-about" id="about">
+            <div class="about-content">
+                <div class="left-about">
+                    <div class="about-imgflex">
+                        <div class="about-img1"> <img src="resources/external/docwithkid.png" alt=""> </div>
+                        <div class="about-img2"><img src="resources/external/clinicpic.png" alt=""> </div>
+                        <div class="about-img3"> <img src="resources/external/toothxray.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="right-about">
+                    <h6 class="about-title">ABOUT US</h6>
+                    <h1 class="about-header">Our Goal is Your Well-being</h1>
+                    <p class="about-text">We aim to provide the best and most appropriate dental
+                        treatment for each individual.</p>
+                    <div class="office-summary">
+                        <div class="contact-summary">
+                            <ul>
+                                <li class="nav-right-phone-calendar button"><img src="resources/Icons/phone.svg"
+                                        class="call-icon" alt="image"><span>(032) 505-7628</span></li>
+                                <li class="nav-right-phone-calendar button"><img
+                                        src="resources/Icons/mobile-alt-1-svgrepo-com.svg" class="phone-icon"
+                                        alt="image"><span>0961 634
+                                        9939</span></li>
+                                <li class="nav-right-phone-calendar button"><img
+                                        src="resources/Icons/location-pin-alt-1-svgrepo-com.svg"
+                                        class="location-pin-icon" alt="image"><span class="office-location">Panphilo
+                                        Frasco Public Market, Jubay, Liloan, Cebu
+                                    </span></li>
+                            </ul>
+
+                        </div>
+                        <div class="office-hours">
+                            <span class="schedule-header">Clinic Hours</span>
+                            <ul>
+                                <li class="schedule-days"><span>Mon - Sat</span></li>
+                                <li class="schedule-time"><span>9:00AM - 4:30PM</span></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <a href="https://www.facebook.com/northeastdental2020/services"><button
+                            class="about-button button button-main">
+                            <img alt="image" src="resources/Icons/calendar.svg" class="home-image07" />
+                            <span class="book-text">Book an appointment</span>
+                        </button></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-blog" id="blog">
+            <div class="blog01">
+                <div class="blog-content">
+                    <div class="blog-header">
+                        <h2 class="blog-heading">
+                            Dedicated dentist strives to ensure your dental wellness.
+                        </h2>
+                        <p class="blog-capton">
+                            Dr. Brenice Adrienne V. Albarillo, the esteemed dentist of Northeast Dental, is committed to
+                            delivering
+                            top-tier dental care, ensuring your well-being with professionalism and precision.
+                        </p>
+                    </div>
+                    <div class="read-more">
+                        <span class="blog01-text ">Get to know our Dentist</span>
+                        <img alt="image" src="resources/Icons/arrow-2.svg" class=".blog-arrow" />
+                    </div>
+                </div>
+                <img alt="image" src="resources/external/docwithkid.png" class="blog01-image2" />
+            </div>
+            <div class="blog02">
+                <div class="blog-content">
+                    <div class="blog-header">
+                        <h2 class="blog-heading">
+                            Secure, Hygienic Setting for Your Comfortable Clinic Visits.
+                        </h2>
+                        <p class="blog-capton">
+                            We uphold clinic cleanliness and safety standards to ensure a comfortable and hygienic
+                            environment
+                            for
+                            our patients' visits.
+                        </p>
+                    </div>
+                    <a href="https://www.google.com/maps/place/NORTHEAST+DENTAL+CLINIC/@10.4220157,123.9958472,18z/data=!4m14!1m7!3m6!1s0x33a9bd3fd2815af3:0x5f91a6b8f97bdb1d!2sNORTHEAST+DENTAL+CLINIC!8m2!3d10.4219761!4d123.9960618!16s%2Fg%2F11mvyq2wg2!3m5!1s0x33a9bd3fd2815af3:0x5f91a6b8f97bdb1d!8m2!3d10.4219761!4d123.9960618!16s%2Fg%2F11mvyq2wg2?hl=en-PH&entry=ttu"
+                        target="_blank">
+                        <div class="read-more">
+                            <span class="home-text24">Locate Our Clinic</span>
+                            <img alt="image" src="resources/Icons/arrow-2.svg" class="blog-arrow" />
+                        </div>
+                    </a>
+                </div>
+                <img alt="image" src="resources/external/clinicpic.png" class="home-image16" />
+            </div>
+            <div class="blog03">
+                <div class="blog-content">
+                    <div class="blog-header">
+                        <h2 class="blog-heading">
+                            Find out how we can help you help you.
+                        </h2>
+                        <p class="blog-capton">
+                            Let's assess your oral health. Book a dental checkup, individuals can have their teeth,
+                            gums, and
+                            overall oral condition
+                            evaluated. Let us know what you need.
+                        </p>
+                    </div>
+                    <button class="button button-main home-book3">
+                        <span>
+                            <span>Book a Consultation</span>
+                            <br />
+                        </span>
+                    </button>
+                </div>
+                <img alt="image" src="resources/external/toothxray.png" class="home-image17" />
+            </div>
+
+        </section>
+
+<!------------------------ Mao ni ako gi usban arlu  --------------------->
+    
+        <script src="SeeMore.js"></script>
+        <script src="PopUp.js"></script>
+
+        <section class="home-practices1" id="services">
+            <div class="home-heading08">
+                <h2 class="home-text18">Services we Offer</h2>
+                <p class="home-text19">
+                    NorthEast Dental Clinic offers Variety of Dental Services. Click <span>SEE MORE</span> to browse all
+                    the
+                    services we offer.
+                </p>
+            </div>
+
+            <div class="home-content02">
+                <div class="home-grid1">
+                    
+                        <div class="home-practice-wrapper">
+                            <div class="practice-practice">
+                                <div class="practice-heading">
+                                    <h3 class="practice-header"><span>Consultation</span></h3>
+                                    <p class="practice-caption">
+                                        <span>
+                                            Have a consultation at our dental clinic to discuss your oral health needs
+                                            and
+                                            explore your
+                                            treatment options.
+
+                                        </span>
+                                    </p>
+                                </div>
+                                <div onclick="togglePopup('backdrop1')" class="read-more">
+                                    <button id="btnPop" >Read More</button>
+                                    <img alt="image" src="resources/Icons/arrow-2.svg" class="practice-image" />
+                                </div>
+                            </div>
+                            
+                            <div id="backdrop1" class="backdrop">
+                                <div id="moreContainer" class="more-container">
+                                    <div class="xmark" onclick="closePopup('backdrop1')"><i class="fa-regular fa-circle-xmark"></i></div>
+                                    <h2>Consultation</h2>
+                                    <p>
+                                        Consultation involves meeting with a dentist to discuss any dental concerns, examine your oral health, and receive professional advice or recommendations for treatment. It's an opportunity to address dental issues, ask questions, and create a plan tailored to your dental needs. During this session, the dentist may perform an examination, discuss treatment options, and outline potential procedures or preventive measures.
+                                    </p>
+                                    <h3 class="price">Price: P300.00 <br>
+                                        Duration: 30 mins</h3>
+                                   <img src="Services images/consultation.jpg" alt="Consultation">
+                                </div>
+                            </div>
+                        </div>
+                       
+                    
+                        <div class="home-practice-wrapper">
+                            <div class="practice-practice">
+                                <div class="practice-heading">
+                                    <h3 class="practice-header">
+                                        <span>Oral Prophylaxis</span>
+                                    </h3>
+                                    <p class="practice-caption">
+                                        <span>
+                                            Also known as <em><i>teeth cleaning</i></em>. A dental proceedure done with
+                                            the aim
+                                            to
+                                            remove tartar and plaque build-up from the surfaces of the teeth as well as
+                                            those hidden in between and under the gums. This proceedure is important to
+                                            avoid oral diseases such as...
+                                        </span>
+                                    </p>
+                                </div>
+                                <div onclick="togglePopup('backdrop2')" class="read-more">
+                                    <button id="btnPop" >Read More</button>
+                                    <img alt="image" src="resources/Icons/arrow-2.svg" class="practice-image" />
+                                </div>
+                            </div>
+
+                            <div id="backdrop2" class="backdrop">
+                                <div id="moreContainer" class="more-container">
+                                    <div class="xmark" onclick="closePopup('backdrop2')"><i class="fa-regular fa-circle-xmark"></i></div>
+                                    <h2>Oral Prophylaxis</h2>
+                                    <p>
+                                        Oral prophylaxis, commonly known as teeth cleaning, is a professional dental procedure aimed at removing plaque, tartar, and stains from the teeth. It involves thorough cleaning of the teeth and gums to prevent cavities, gum disease, and other oral issues. This process typically includes scaling (removing hardened plaque or tartar) and polishing to leave the teeth clean, smooth, and free of debris. Regular oral prophylaxis is an essential part of maintaining good oral hygiene and preventing dental problems.
+                                    </p>
+                                    <h3 class="price">Price: P300.00 <br>
+                                        Duration: 30 mins</h3>
+                                   <img src="Services images/oral prophylaxis.jpg" alt="Oral Prophylaxis">
+                                </div>
+                            </div>
+                        </div>
+                                                   
+
+                        <div class="home-practice-wrapper">
+                            <div class="practice-practice">
+                                <div class="practice-heading">
+                                    <h3 class="practice-header">
+                                        <span>Tooth Extraction</span>
+                                    </h3>
+                                    <p class="practice-caption">
+                                        <span>
+                                            Tooth extraction is a procedure to remove a tooth from the gum socket.
+                                        </span>
+                                    </p>
+                                </div>
+                                <div onclick="togglePopup('backdrop3')" class="read-more">
+                                    <button id="btnPop" >Read More</button>
+                                    <img alt="image" src="resources/Icons/arrow-2.svg" class="practice-image" />
+                                </div>
+                            </div>
+
+                            <div id="backdrop3" class="backdrop">
+                                <div id="moreContainer" class="more-container">
+                                    <div class="xmark" onclick="closePopup('backdrop3')"><i class="fa-regular fa-circle-xmark"></i></div>
+                                    <h2>Tooth Extraction</h2>
+                                    <p>
+                                        Tooth extraction is a dental procedure where a tooth is removed from its socket in the jawbone. This might be necessary if a tooth is severely damaged, decayed, infected, or causing crowding issues. The procedure is typically performed by a dentist or oral surgeon using specialized tools to carefully loosen and remove the tooth. After extraction, the area is often treated to promote healing, and the dentist might discuss options for replacing the extracted tooth if needed.
+                                    </p>
+                                    <h3 class="price">Price: P300.00 <br>
+                                        Duration: 30 mins</h3>
+                                   <img src="Services images/tooth extraction.jpg" alt="Tooth Extraction">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="home-practice-wrapper">
+                            <div class="practice-practice">
+                                <div class="practice-heading">
+                                    <h3 class="practice-header">
+                                        <span>Tooth Whitening</span>
+                                    </h3>
+                                    <p class="practice-caption">
+                                        <span>
+                                            Tooth whitening is a procedure aimed at lightening the color of teeth and
+                                            removing
+                                            stains and
+                                            discoloration.
+
+                                        </span>
+                                    </p>
+                                </div>
+                                <div onclick="togglePopup('backdrop4')" class="read-more">
+                                    <button id="btnPop" >Read More</button>
+                                    <img alt="image" src="resources/Icons/arrow-2.svg" class="practice-image" />
+                                </div>
+                            </div>
+
+                            <div id="backdrop4" class="backdrop">
+                                <div id="moreContainer" class="more-container">
+                                    <div class="xmark" onclick="closePopup('backdrop4')"><i class="fa-regular fa-circle-xmark"></i></div>
+                                    <h2>Tooth Whitening</h2>
+                                    <p>
+                                        Tooth whitening is a cosmetic dental procedure aimed at lightening the color of your teeth. It involves the use of bleaching agents, like hydrogen peroxide or carbamide peroxide, to remove stains and discoloration from the enamel and dentin of the teeth. This process can be done in-office by a dentist or at home using dentist-prescribed kits. Whitening can help improve the brightness of teeth affected by various factors like age, certain foods and drinks, smoking, or medications.
+                                    </p>
+                                    <h3 class="price">Price: P300.00 <br>
+                                        Duration: 30 mins</h3>
+                                   <img src="Services images/tooth whitening.jpg" alt="Tooth Whitening">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <span id="read-more-text">
+
+                            <div class="home-practice-wrapper">
+                                <div class="practice-practice">
+                                    <div class="practice-heading">
+                                        <h3 class="practice-header">
+                                            <span>Dental Braces</span>
+                                        </h3>
+                                        <p class="practice-caption">
+                                            <span>
+                                                Dental braces are devices used in orthodontics that align and straighten
+                                                teeth and
+                                                help position
+                                                them with regard to a
+                                                person's bite, while also aiming to improve dental health.
+
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div onclick="togglePopup('backdrop5')" class="read-more">
+                                        <button id="btnPop" >Read More</button>
+                                        <img alt="image" src="resources/Icons/arrow-2.svg" class="practice-image" />
+                                    </div>
+                                </div>
+    
+                                <div id="backdrop5" class="backdrop">
+                                    <div id="moreContainer" class="more-container">
+                                        <div class="xmark" onclick="closePopup('backdrop5')"><i class="fa-regular fa-circle-xmark"></i></div>
+                                        <h2>Dental Braces</h2>
+                                        <p>
+                                            Dental braces are orthodontic devices used to align and straighten teeth, correct bite issues, and improve overall dental health. They consist of metal brackets, wires, and elastic bands that apply gentle pressure to gradually move teeth into proper alignment. Braces are commonly used to fix overcrowded teeth, gaps, crookedness, or misaligned bites. There are different types of braces, including traditional metal braces, ceramic braces that blend with teeth, lingual braces placed on the inner side of teeth, and clear aligners like Invisalign, which are removable and less visible than traditional braces.
+                                        </p>
+                                        <h3 class="price">Price: P300.00 <br>
+                                            Duration: 30 mins</h3>
+                                       <img src="Services images/braces.jpg" alt="Dental Braces">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="home-practice-wrapper">
+                                <div class="practice-practice">
+                                    <div class="practice-heading">
+                                        <h3 class="practice-header"><span>Dentures</span></h3>
+                                        <p class="practice-caption">
+                                            <span>
+                                                Dentures are removable oral appliances that replace missing teeth. There are
+                                                many
+                                                types of
+                                                dentures, including full,
+                                                partial and implant-supported dentures.
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div onclick="togglePopup('backdrop6')" class="read-more">
+                                        <button id="btnPop" >Read More</button>
+                                        <img alt="image" src="resources/Icons/arrow-2.svg" class="practice-image" />
+                                    </div>
+                                </div>
+    
+                                <div id="backdrop6" class="backdrop">
+                                    <div id="moreContainer" class="more-container">
+                                        <div class="xmark" onclick="closePopup('backdrop6')"><i class="fa-regular fa-circle-xmark"></i></div>
+                                        <h2>Dentures</h2>
+                                        <p>
+                                            Dentures are removable prosthetic devices used to replace missing teeth and surrounding tissues. They're custom-made to fit comfortably in your mouth and restore the appearance of a natural smile while enhancing chewing and speaking abilities. There are two main types: complete dentures, which replace all teeth in the upper or lower jaw, and partial dentures, which replace a few missing teeth and are attached to remaining natural teeth. Dentures can be made from various materials like acrylic, metal, or a combination of both.
+                                        </p>
+                                        <h3 class="price">Price: P300.00 <br>
+                                            Duration: 30 mins</h3>
+                                       <img src="Services images/dentures.jpg" alt="Dentures">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="home-practice-wrapper">
+                                <div class="practice-practice">
+                                    <div class="practice-heading">
+                                        <h3 class="practice-header"><span>Periapical X-ray</span></h3>
+                                        <p class="practice-caption">
+                                            <span>
+                                                Periapical X-ray shows your entire tooth, from the crown to the root tip.
+                                                This type of X-ray helps to detect decay, gum
+                                                disease, bone loss and any other abnormalities of your tooth or surrounding
+                                                bone.
+
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div onclick="togglePopup('backdrop7')" class="read-more">
+                                        <button id="btnPop" >Read More</button>
+                                        <img alt="image" src="resources/Icons/arrow-2.svg" class="practice-image" />
+                                    </div>
+                                </div>
+    
+                                <div id="backdrop7" class="backdrop">
+                                    <div id="moreContainer" class="more-container">
+                                        <div class="xmark" onclick="closePopup('backdrop7')"><i class="fa-regular fa-circle-xmark"></i></div>
+                                        <h2>Periapical X-Ray</h2>
+                                        <p>
+                                            A periapical X-ray in dentistry is a type of dental X-ray that captures images of a specific tooth or a small section of the mouth. It focuses on showing the entire tooth, from the crown to the root tip, as well as the surrounding bone structure. This type of X-ray helps dentists examine the root of the tooth, the bone around the tooth, and the overall dental structure. It's commonly used to detect issues such as dental abscesses, cysts, bone changes, and abnormalities in the tooth's root structure.
+                                        </p>
+                                        <h3 class="price">Price: P300.00 <br>
+                                            Duration: 30 mins</h3>
+                                       <img src="Services images/x-ray.jpg" alt="Periapical X-Ray">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="home-practice-wrapper">
+                                <div class="practice-practice">
+                                    <div class="practice-heading">
+                                        <h3 class="practice-header"><span>Cosmetic Veneers</span></h3>
+                                        <p class="practice-caption">
+                                            <span>
+                                                Dental veneers are thin, tooth-colored shells that are attached to the front
+                                                surface of teeth to improve their
+                                                appearance.
+
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div onclick="togglePopup('backdrop8')" class="read-more">
+                                        <button id="btnPop" >Read More</button>
+                                        <img alt="image" src="resources/Icons/arrow-2.svg" class="practice-image" />
+                                    </div>
+                                </div>
+    
+                                <div id="backdrop8" class="backdrop">
+                                    <div id="moreContainer" class="more-container">
+                                        <div class="xmark" onclick="closePopup('backdrop8')"><i class="fa-regular fa-circle-xmark"></i></div>
+                                        <h2>Cosmetics Veneers</h2>
+                                        <p>
+                                            Cosmetic veneers are thin, custom-made shells typically made from porcelain or composite resin. They're designed to cover the front surface of teeth to improve their appearance. Veneers can address various concerns such as discoloration, chips, gaps, or misalignment, providing a natural-looking and aesthetically pleasing smile. The process involves removing a small amount of enamel from the tooth's surface, taking impressions, and then bonding the veneers to the front of the teeth, resulting in a transformed smile with enhanced shape, color, and alignment.
+                                        </p>
+                                        <h3 class="price">Price: P300.00 <br>
+                                            Duration: 30 mins</h3>
+                                       <img src="Services images/veneers.jpg" alt="Veneers">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="home-practice-wrapper">
+                                <div class="practice-practice">
+                                    <div class="practice-heading">
+                                        <h3 class="practice-header"><span>Crowns & Bridges</span></h3>
+                                        <p class="practice-caption">
+                                            <span>
+                                                A bridge is a fixed dental restoration used to replace one or more missing
+                                                teeth by joining an artificial tooth
+                                                definitively to adjacent teeth or dental implants
+
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div onclick="togglePopup('backdrop9')" class="read-more">
+                                        <button id="btnPop" >Read More</button>
+                                        <img alt="image" src="resources/Icons/arrow-2.svg" class="practice-image" />
+                                    </div>
+                                </div>
+    
+                                <div id="backdrop9" class="backdrop">
+                                    <div id="moreContainer" class="more-container">
+                                        <div class="xmark" onclick="closePopup('backdrop9')"><i class="fa-regular fa-circle-xmark"></i></div>
+                                        <h2>Crowns & Bridges</h2>
+                                        <p>
+                                            A crown or cap is a dental restoration that covers the exposed surface of a tooth to strengthen it or improve its appearance. 
+                                        </p>
+                                        <p>
+                                            A bridge is a dental restoration to replace one or more missing teeth. It includes an artificial tooth or teeth which are fused to crowns on either side to provide support.
+                                        </p>
+                                        <h3 class="price">Price: P300.00 <br>
+                                            Duration: 30 mins</h3>
+                                       <img src="Services images/crowns.jpg" alt="Crowns & Bridges">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="home-practice-wrapper">
+                                <div class="practice-practice">
+                                    <div class="practice-heading">
+                                        <h3 class="practice-header"><span>Impacted Tooth Surgery</span></h3>
+                                        <p class="practice-caption">
+                                            <span>
+                                                Wisdom tooth extraction is a surgical procedure to remove one or more wisdom
+                                                teeth the four permanent adult teeth
+                                                located at the back corners of your mouth on the top and bottom.
+                                            </span>
+                                        </p>
+                                    </div>
+                                      <div onclick="togglePopup('backdrop10')" class="read-more">
+                                    <button id="btnPop" >Read More</button>
+                                    <img alt="image" src="resources/Icons/arrow-2.svg" class="practice-image" />
+                                </div>
+                            </div>
+
+                            <div id="backdrop10" class="backdrop">
+                                <div id="moreContainer" class="more-container">
+                                    <div class="xmark" onclick="closePopup('backdrop10')"><i class="fa-regular fa-circle-xmark"></i></div>
+                                    <h2>Impacted Tooth Surgery</h2>
+                                    <p>
+                                        Impacted tooth surgery is a procedure performed to remove a tooth that is unable to emerge properly through the gum due to obstruction or lack of space. This commonly happens with wisdom teeth, but it can occur with any tooth in the mouth.
+                                     </p>
+                                    <h3 class="price">Price: P300.00 <br>
+                                        Duration: 30 mins</h3>
+                                   <img src="Services images/impacted surgery.jpg" alt="Impacted Tooth Surgery">
+                                </div>
+                            </div>
+                        </div>
+
+                            <div class="home-practice-wrapper">
+                                <div class="practice-practice">
+                                    <div class="practice-heading">
+                                        <h3 class="practice-header"><span>Root Canal Treatment</span></h3>
+                                        <p class="practice-caption">
+                                            <span>
+                                                Root canal is a treatment to repair and save a badly damaged or infected
+                                                tooth instead of removing it. The term "root
+                                                canal" comes from cleaning of the canals inside a tooth's root.
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div onclick="togglePopup('backdrop11')" class="read-more">
+                                        <button id="btnPop" >Read More</button>
+                                        <img alt="image" src="resources/Icons/arrow-2.svg" class="practice-image" />
+                                    </div>
+                                </div>
+    
+                                <div id="backdrop11" class="backdrop">
+                                    <div id="moreContainer" class="more-container">
+                                        <div class="xmark" onclick="closePopup('backdrop11')"><i class="fa-regular fa-circle-xmark"></i></div>
+                                        <h2>Root Canal Treatment</h2>
+                                        <p>
+                                            Root canal treatment, also known as endodontic therapy, is a dental procedure aimed at saving a severely infected or damaged tooth. It involves removing the infected or inflamed pulp (the soft tissue inside the tooth), cleaning and disinfecting the inside of the tooth, and then filling and sealing it.
+                                        </p>
+                                        <h3 class="price">Price: P300.00 <br>
+                                            Duration: 30 mins</h3>
+                                       <img src="Services images/root treatment.jpg" alt="Root Canal Treatment">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="home-practice-wrapper">
+                                <div class="practice-practice">
+                                    <div class="practice-heading">
+                                        <h3 class="practice-header"><span>Fluoride Application</span></h3>
+                                        <p class="practice-caption">
+                                            <span>
+                                                Topical fluorides strengthen teeth already present in the mouth, making them
+                                                more decay resistant.
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div onclick="togglePopup('backdrop12')" class="read-more">
+                                        <button id="btnPop" >Read More</button>
+                                        <img alt="image" src="resources/Icons/arrow-2.svg" class="practice-image" />
+                                    </div>
+                                </div>
+    
+                                <div id="backdrop12" class="backdrop">
+                                    <div id="moreContainer" class="more-container">
+                                        <div class="xmark" onclick="closePopup('backdrop12')"><i class="fa-regular fa-circle-xmark"></i></div>
+                                        <h2>Fluoride Application</h2>
+                                        <p>
+                                            Fluoride application in dental care involves the use of fluoride—a natural mineral—to strengthen teeth and prevent tooth decay. It's applied topically to the teeth in the form of a gel, foam, or varnish during a dental visit.
+                                        </p>
+                                        <h3 class="price">Price: P300.00 <br>
+                                            Duration: 30 mins</h3>
+                                       <img src="Services images/fluoride app.jpg" alt="Fluoride Application">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="home-practice-wrapper">
+                                <div class="practice-practice">
+                                    <div class="practice-heading">
+                                        <h3 class="practice-header"><span>Dental Filling <span></h3>
+                                        <p class="practice-caption">
+                                            <span>
+                                                To treat a cavity your dentist will remove the decayed portion of the tooth
+                                                and then "fill" the area on the tooth where
+                                                the decayed material once lived.
+                                            </span>
+                                        </p>
+                                    </div>
+                                        <div onclick="togglePopup('backdrop13')" class="read-more">
+                                        <button id="btnPop" >Read More</button>
+                                        <img alt="image" src="resources/Icons/arrow-2.svg" class="practice-image" />
+                                    </div>
+                                </div>
+
+                                <div id="backdrop13" class="backdrop">
+                                    <div id="moreContainer" class="more-container">
+                                        <div class="xmark" onclick="closePopup('backdrop13')"><i class="fa-regular fa-circle-xmark"></i></div>
+                                        <h2>Dental Filling</h2>
+                                        <p>
+                                            A dental filling is a restorative treatment used to repair a tooth that has been damaged by decay or a minor fracture. The process involves removing the decayed or affected portion of the tooth and filling the cavity with a material to restore its function, shape, and integrity.
+                                        </p>
+                                        <h3 class="price">Price: P300.00 <br>
+                                            Duration: 30 mins</h3>
+                                    <img src="Services images/fillling.jpg" alt="Dental Filling">
+                                    </div>
+                                </div>
+                            </div>
+                        
+                    </span>
+                </div>
+                <button id="see-more-btn" onclick="toggleContent()" class="button button-main">
+                        See More                           
+                </button>
+            </div>
+        </section>
+<!----------------------------------------------------------------------------->
+        
+
+        <section id="schedule" class="home-schedule">
+            <div class="home-content07">
+                <div class="home-header15">
+                    <h2 class="home-heading13">
+                        Schedule an in person Appointment with Us
+                    </h2>
+                    <p class="home-caption8">
+                        Schedule your in-person appointment for personalized and comprehensive dental care. Choose a
+                        date online
+                        or call our friendly
+                        staff.
+                        <!-- <br> -->
+                        Begin your journey to a healthier smile today.
+                    </p>
+                </div>
+                <div class="home-types">
+                    <button class="home-book-person button button-main button-white">
+                        <span>Book an Appointment</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-footer">
+            <div class="footer-max">
+                <div class="footer-left">
+                    <div class="footer-logo">
+
+                        <img alt="image" src="resources/Branding/Northeast-logo7-whitefont.svg"
+                            class="footer-logo-img" />
+
+                        <p class="footer-logo-text">
+                            We aim to provide the best and most appropriate dental
+                            treatment for each individual.
+                        </p>
+                    </div>
+                    <div class="footer-socials">
+                        <div class="social">
+                            <a href="https://www.facebook.com/northeastdental2020" target="_blank"><img
+                                    alt="Facebook Page" src="resources/Icons/facebook.svg" class="social-image" /></a>
+                        </div>
+                        <div class="social">
+                            <a href="https://www.facebook.com/northeastdental2020" target="_blank"><img alt="Gmail"
+                                    src="resources/Icons/gmail-icon.svg" class="social-image" /></a>
+                        </div>
+                        <div class="social">
+                            <a href="https://www.facebook.com/messages/t/638418486786663" target="_blank"><img
+                                    alt="Facebook Messenger" src="resources/Icons/messenger-fill-svgrepo-com.svg"
+                                    alt="Messenger" class="social-image" /></a>
+                        </div>
+                    </div>
+                    <div class="footer-legal">
+                        <span class="home-copyright">
+                            © 2023 Northeast Dental Clinic. All Rights Reserved.
+                        </span>
+                        <!-- <span class="legal-link">Privacy Policy</span>
+            <span class="legal-link">Terms of Use</span> -->
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-right01">
+                        <span class="footer-header">Menu</span>
+                        <div class="footer-links">
+                            <span class="footer-link"><a href="#home">Home</a></span>
+                            <span class="footer-link"><a href="#about">About</a></span>
+                            <span class="footer-link"><a href="#blog">Blog</a></span>
+                            <span class="footer-link"><a href="#services">Services</a></span>
+                            <span class="footer-link"><a href="#schedule">Book an Appointment</a></span>
+                        </div>
+                    </div>
+                    <!-- <div class="home-list2">
+            <span class="home-header17">Resources</span>
+            <div class="home-links2">
+              <span class="home-link10">Patients' Gallery</span>
+              <span class="home-link11">Doctor</span>
+            </div>
+          </div> -->
+                    <div class="footer-right02">
+                        <span class="footer-header">Contact</span>
+                        <div class="footer-links">
+                            <span class="footer-link">
+                                Panphilo Frasco Public Market, Jubay, Liloan, Cebu
+                            </span>
+                            <a href="mailto:northeastdental2020@gmail.com?subject=Main" class="footer-link">
+                                northeastdental2020@gmail.com
+                            </a>
+                            <a href="tel:(032) 505-7628" class="footer-link">
+                                (032) 505-7628
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-legal1">
+                    <!-- <div class="home-row">
+                    <span class="legal-link">Privacy Policy</span>
+                    <span class="legal-link">Terms of Use</span>
+                </div> -->
+                    <span class="home-copyright5">
+                        © 2023 Northeast Dental Clinic. All Rights Reserved.
+                    </span>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="./scripts/navEffects.js" defer></script>
+</body>
+
+
+</html>
