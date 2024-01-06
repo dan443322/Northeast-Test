@@ -1176,19 +1176,21 @@ header {
  
 }
 .more-container{
-  background-color: white;
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 5px;
   display: block;
   position: fixed;
   top: 50%;
-  left: 10%;
+  left: 50%;
   opacity: 1;
-  transform: translate(-10%,-50%);
- 
-  width: 100%;
-  height: 70%;
- 
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
+  transform: translate(-50%,-50%);
+  width: 900px;
+  height: 600px;
+  font-family:inherit;
+  
 }
 .backdrop.active{
   z-index: 2;
@@ -1206,18 +1208,17 @@ header {
   display: block;
   margin-top: 60px;
   text-align: center;
-  width: 60%;
-  font-size: 56px;
+  width: 50%;
+  font-size: 40px;
   
   font-style: normal;
   font-weight: 600;
 }
 .more-container p{
   display: block;
-  
   margin: 30px;
-  font-size: 25px;
-  width: 55%;
+  font-size: 20px;
+  width: 50%;
   line-height: 27px;
 
 }
@@ -1229,22 +1230,25 @@ header {
 
 .xmark i{
   position: absolute;
-  top: 5px;
-  left: 10px;
+  top: 10px;
+  right: 10px;
   font-size: 30px;
   cursor: pointer;
 }
 .more-container img{
+  box-shadow: 10px 10px 10px #6c93f5;
+  object-fit: cover;
   position: fixed;
-  right: 10px;
-  top: 15px;
+  right: 70px;
+  top: 70px;
   border-radius: 5px;
-  height: 90%;
-  width: 40%;
+  height: 450px;
+  width: 300px;
 }
-@media (max-width: 800px){
+@media (max-width: 920px){
   .more-container{
-      height: 80%;
+      height: 650px;
+      width: 800px;
       display: block;
   }
   .more-container h2,.price{
@@ -1258,13 +1262,31 @@ header {
       display: none;
   }
 }
-@media (max-width:365px) {
+@media(max-width: 830px){
   .more-container{
-      height: 90%;
+    height: 700px;
+    width: 700px;
+  }
+}
+@media (max-width:350px) {
+  .more-container{
+      height: 80%;
+  }
+  .more-container h2{
+    font-size: 30px;
+  }
+  .more-container p{
+    font-size: 15px;
+  }
+}
+@media(max-width: 600px){
+  .more-container{
+    width: 600px;
   }
 }
 @media (max-width:307px){
   .more-container{
-      height: 95%;
+      height: 85%%;
   }
 }
+
