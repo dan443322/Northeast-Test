@@ -1161,6 +1161,7 @@ header {
 
 /************* Kani akong gipuno sa css *************/
 
+
 .backdrop{
   background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
@@ -1248,27 +1249,34 @@ header {
 @media (max-width: 920px){
   .more-container{
       height: 650px;
-      width: 800px;
+      width: 90%;
       display: block;
   }
-  .more-container h2,.price{
-      width: 100%;
-  }
-  .more-container p{
-      width: 90%;
-      margin-right: 90px;
-  }
-  .more-container img{
-      display: none;
-  }
+
+  
 }
-@media(max-width: 830px){
+@media(max-width: 918px){
   .more-container{
     height: 700px;
-    width: 700px;
+    width: 90%;
+  }
+  .more-container img{
+    display: none;
+}
+.more-container h2,.price{
+  width: 90%;
+}
+.more-container p{
+  width: 90%;
+  margin-right: 90px;
+}
+}
+@media(max-width: 600px){
+  .more-container{
+    width: 90%;
   }
 }
-@media (max-width:350px) {
+@media (max-width:400px) {
   .more-container{
       height: 80%;
   }
@@ -1279,14 +1287,10 @@ header {
     font-size: 15px;
   }
 }
-@media(max-width: 600px){
-  .more-container{
-    width: 600px;
-  }
-}
+
 @media (max-width:307px){
   .more-container{
-      height: 85%%;
+      height: 85%;
+      width: 90%;
   }
 }
-
