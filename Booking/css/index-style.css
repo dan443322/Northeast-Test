@@ -1,0 +1,78 @@
+body{
+    background-image: url(../images/clinic3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: inherit;
+}
+
+.book-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 80%;
+    width: 70%;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.book-container h2{
+    margin: 1px;
+}
+
+
+.info input{
+    display: block;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 300px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.info select{
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 20px;
+    width: 150px;
+    border: solid black 2px;
+    height: 50px;
+    border-radius: 5px;
+}
+.num{
+    display: flex;
+}
+.num input{
+    margin-bottom: 20px ;
+    width: 50px;
+}
+.sched button{
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+   width: 300px;
+   height: 50px;
+   border-radius: 10px;
+    background-color:rgb(36, 97, 255);
+    color: aliceblue;
+}
+.service{
+    margin-top: 20px;
+}
+.service select{
+    cursor: pointer;
+    margin-top: 10px;
+    border: solid black 2px;
+    font-size: 20px;
+    width: 350px;
+    height: 50px;
+    border-radius: 5px;
+}
+.doc img{
+    position: absolute;
+    height: 90%;
+    width: 40%;
+    bottom: 0;
+    right: 5%;
+    z-index: -1;
+}

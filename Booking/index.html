@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index-style.css">
+    <link rel="stylesheet" href="css/appoint.css">
+    <link rel="stylesheet" href="css/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.css">
+</head>
+
+<body>
+    <div class="book-container">
+
+        <h2>Book your Appointment</h2>
+        <h2 style="margin-bottom: 30px; color: rgb(36, 97, 255);">NorthEast Dental Clinic</h2>
+
+        <div class="info">
+            
+            <label for="">Name</label>
+            <form action="#">
+                <input type="text" id="" placeholder="">
+            </form>
+          
+            <label for="">Address</label>
+            <form action="#">
+                <input type="text" name="" id="" placeholder="">
+            </form>
+          <div class="num">
+            <div>  
+            <label for="">Age</label><br>
+            <form action="#">
+                <input type="number" name="" id="" placeholder="">
+            </form>
+        </div>
+        <div style="margin-left: 30px;">
+            <label for="">Gender</label><br>
+            <select name="" id="" style="margin-bottom: 20px;">
+                <option value="0"></option>
+                <option value="1">Male</option>
+                <option value="1">Female</option>
+            </select>
+        </div>
+          </div>
+    </div>  
+        <div class="sched">
+            <label for="">Set Schedule</label><br>
+            <button onclick="togglePopup()">Select Date & Hour</button>
+        </div>
+
+        <div class="service">
+            <label for="">Select Service</label><br>
+            <select name="" id="" >
+                <option value="0"></option>
+                <option value="1">Braces</option>
+                <option value="2">Consultation</option>
+                <option value="3">Cosmetic Veneers</option>
+                <option value="4">Crowns & Bridges</option>
+                <option value="5">Dental Filling</option>
+                <option value="6">Dentures</option>
+                <option value="7">Fluoride Application</option>
+                <option value="8">Impacted Tooth</option>
+                <option value="9">Insurance</option>
+                <option value="10">Oral Prophylaxis</option>
+                <option value="11">Periapical X-ray</option>
+                <option value="12">Root Canal Treatment</option>
+                <option value="13">Teeth Whitening</option>
+                <option value="14">Tooth Extraction</option>
+
+            </select>
+        </div>
+
+    </div>
+    <div class="doc">
+        <img src="images/doc.png" alt="">
+   </div>
+
+   
+
+
+   
+    
+    <div class="ColumnContainer" id="ColumnContainer">
+
+        <i class="fa-regular fa-circle-xmark" onclick="togglePopup()"></i>
+        <div class="column mid">
+            <h1 id="month-year"></h1>
+        
+         <table id="calendar">
+            <thead>
+            <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+            </table>
+        </div>
+
+       
+            <div id="prev" onclick="prevMonth()"><i class="fa-solid fa-arrow-left"></i></div>
+            <div id="next" onclick="nextMonth()"><i class="fa-solid fa-arrow-right"></i></div>
+       
+
+        <script src="JS/app.js"></script>
+
+
+      
+        <div class="column right">
+            <h1>December 1, 2023</h1>
+
+           
+            <div class="time">      
+                <div>9AM</div>
+                <div>10AM</div>
+                <div>11AM</div>    
+                <div>1PM</div>                    
+                <div>2PM</div>    
+                <div>3PM</div>    
+            </div>
+            
+            
+
+            <div class="submit">
+                <a href=#"">
+                    <input type="button" id="Login" name="Log" value="Submit">
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function togglePopup() {
+            var ColumnContainer = document.getElementById('ColumnContainer');
+            ColumnContainer.classList.toggle('active');
+        }
+        function closePopup() {
+            var ColumnContainer = document.getElementById('ColumnContainer');
+            ColumnContainer.classList.remove('active');
+        }
+    </script>
+
+</body>
+</html>

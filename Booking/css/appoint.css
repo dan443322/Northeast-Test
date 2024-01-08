@@ -1,0 +1,148 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+   
+}
+
+.ColumnContainer{
+    
+    position: fixed;
+    top: -150%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%,-50%) scale(1.25);
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+    height: 800px;
+    width: 90%;
+    max-width: 90%;
+    float: left;
+    display: flex;
+    text-align: center;   
+}
+.ColumnContainer.active{
+    z-index: 2;
+    top: 50%;
+    opacity: 2;
+    transform: translate(-50%,-50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 350ms ease-in-out 0ms;
+    
+}
+
+.fa-circle-xmark{
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 30px;
+    color: black;
+}
+.column.mid{
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100%;
+    width: 75%;
+    background-color:#d0f4fd;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(36, 97, 255);
+}
+.column.mid h1{
+    border-bottom: solid black 2px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+.days{
+    display: flex;
+    width: 100%;
+}
+.days div{
+    margin: 20px;
+}
+
+.column.mid table{
+    font-size: 20px;
+    width: 100%;
+    height: 50%;
+}
+.column.mid td{
+    
+    width: 5%;
+}
+.column.mid div{
+    background-color: #80969b;
+    height: 100%;
+    width: 100%; 
+}
+.column.mid a{
+    text-decoration: none;
+    margin-bottom: 20px;
+    color: black;
+}
+
+
+#prev{
+    position: absolute;
+    margin-left: 22%;
+    margin-top: 80px;
+   cursor: pointer;
+}
+
+#next{
+    position: absolute;
+    margin-left: 52%;
+    margin-top: 80px;
+    cursor: pointer;    
+}
+
+
+
+
+.column.right{
+    color: white;
+    width: 25%;
+    background-color:rgb(36, 97, 255);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(36, 97, 255);
+}
+.column.right h1{
+    border-bottom: rgb(252, 252, 252) solid 2px;
+    width: 80%;
+    font-size: 25px;
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.time div{
+    cursor: pointer;
+    display: grid;
+    align-items: center;
+    width: 70%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+.time div:hover{
+    background-color: rgb(30, 74, 187);
+
+}
+
+
+.submit input{
+    width: 80%;
+    height: 40px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
