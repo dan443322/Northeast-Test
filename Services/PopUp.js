@@ -8,3 +8,11 @@ function closePopup(backdropID) {
    backdrop.classList.remove('active');
    
 }
+
+function disableFunctions(){
+    document.getElementById('nav-burger-menu').disabled=true;
+}
+
+function enableFunctions(){
+    document.getElementById('nav-burger-menu').disabled = false;
+}
