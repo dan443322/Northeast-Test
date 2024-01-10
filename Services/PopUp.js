@@ -9,10 +9,12 @@ function closePopup(backdropID) {
    
 }
 
-function disableFunctions(){
-    document.getElementById('nav-burger-menu').disabled=true;
+function disableFunctions() {
+    
+     document.getElementById('nav-burger-menu').disabled = true;
 }
 
-function enableFunctions(){
-    document.getElementById('nav-burger-menu').disabled = false;
+function enableFunctions() {
+    // Enable the functions when the popup is closed
+     document.getElementById('nav-burger-menu').disabled = false;
 }
