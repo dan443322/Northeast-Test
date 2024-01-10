@@ -325,40 +325,61 @@
             </div>
 
         </section>
+  
+        <script src="Services/PopUp.js"></script>
+        <script src="Services/SeeMore.js"></script>
 
         <section class="home-practices1" id="services">
             <div class="home-heading08">
                 <h2 class="home-text18">Services we Offer</h2>
                 <p class="home-text19">
-                    Northeast Dental Clinic offers Variety of Dental Services. Click <span>SEE MORE</span> to browse all
+                    NorthEast Dental Clinic offers Variety of Dental Services. Click <span>SEE MORE</span> to browse all
                     the
                     services we offer.
                 </p>
             </div>
+
             <div class="home-content02">
                 <div class="home-grid1">
+                    
+                        <div class="home-practice-wrapper">
+                            <div class="practice-practice">
+                                <div class="practice-heading">
+                                    <h3 class="practice-header"><span>Consultation</span></h3>
+                                    <p class="practice-caption">
+                                        <span>
+                                            Have a consultation at our dental clinic to discuss your oral health needs
+                                            and
+                                            explore your
+                                            treatment options.
 
-                    <div class="home-practice-wrapper">
-                        <div class="practice-practice">
-                            <div class="practice-heading">
-                                <h3 class="practice-header"><span>Consultation</span></h3>
-                                <p class="practice-caption">
-                                    <span>
-                                        Have a consultation at our dental clinic to discuss your oral health needs
-                                        and
-                                        explore your
-                                        treatment options.
-
-                                    </span>
-                                </p>
+                                        </span>
+                                    </p>
+                                </div>
+                                <div onclick="togglePopup('backdrop1')" class="read-more">
+                                    <button id="btnPop" >Read More</button>
+                                    <img alt="image" src="resources/Icons/arrow-2.svg" class="practice-image" />
+                                </div>
                             </div>
-                            <div class="read-more">
-                                <span class="practice-text">Read more</span>
-                                <img alt="image" src="resources/Icons/arrow-2.svg" class="practice-image" />
+                            
+                            <div id="backdrop1" class="backdrop">
+                                <div id="moreContainer" class="more-container">
+                                    <div class="xmark" onclick="closePopup('backdrop1')"><i class="fa-regular fa-circle-xmark"></i></div>
+                                    <h2>Consultation</h2>
+                                    <p>
+                                        Consultation involves meeting with a dentist to discuss any dental concerns, 
+                                        examine your oral health, and receive professional advice or recommendations for treatment. 
+                                        It's an opportunity to address dental issues, ask questions, and create a plan tailored to your dental needs.
+                                        During this session, the dentist may perform an examination, discuss treatment options, 
+                                       
+                                    </p>
+                                    <h3 class="price">Price: PHP 300.00 <br>
+                                        Duration: 30 mins</h3>
+                                   <img src="Services/Services images/consultation.jpg" alt="Consultation">
+                                </div>
                             </div>
                         </div>
-                    </div>
-
+                       
                     <div class="home-practice-wrapper">
                         <div class="practice-practice">
                             <div class="practice-heading">
