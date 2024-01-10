@@ -1548,3 +1548,139 @@ header {
   width: 50px;
   object-fit: cover;
 }
+
+/************* Kani akong gipuno sa css para sa services *************/
+
+.backdrop{
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top:-150%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%,-50%) scale(1);
+  transition: top 0ms ease-in-out 200ms,
+              opacity 200ms ease-in-out 0ms,
+              transform 200ms ease-in-out 0ms ;
+  width: 100%;
+  height: 100%;
+ 
+}
+.more-container{
+  background-image: url("Services/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 5px;
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  transform: translate(-50%,-50%);
+  width: 900px;
+  height: 600px;
+  font-family:inherit;
+  
+}
+.backdrop.active{
+  z-index: 2;
+  top: 50%;
+  opacity: 1;
+  transform: translate(-50% ,-50%) scale(1);
+  transition: top 0ms ease-in-out 0ms,
+              opacity 200ms ease-in-out 0ms,
+              transform 350ms ease-in-out 0ms;
+}
+#btnPop{
+  cursor: pointer;
+}
+.more-container h2{
+  display: block;
+  margin-top: 60px;
+  text-align: center;
+  width: 50%;
+  font-size: 40px;
+  
+  font-style: normal;
+  font-weight: 600;
+}
+.more-container p{
+  display: block;
+  margin: 30px;
+  font-size: 20px;
+  width: 50%;
+  line-height: 27px;
+
+}
+.price{
+  display: block;
+  width: 55%;
+  margin: 30px;
+}
+
+.xmark i{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.more-container img{
+  box-shadow: 10px 10px 10px #6c93f5;
+  object-fit: cover;
+  position: fixed;
+  right: 70px;
+  top: 70px;
+  border-radius: 5px;
+  height: 450px;
+  width: 300px;
+}
+@media (max-width: 920px){
+  .more-container{
+      height: 650px;
+      width: 90%;
+      display: block;
+  }
+
+  
+}
+@media(max-width: 918px){
+  .more-container{
+    height: 700px;
+    width: 90%;
+  }
+  .more-container img{
+    display: none;
+}
+.more-container h2,.price{
+  width: 90%;
+}
+.more-container p{
+  width: 90%;
+  margin-right: 90px;
+}
+}
+@media(max-width: 600px){
+  .more-container{
+    width: 90%;
+  }
+}
+@media (max-width:400px) {
+  .more-container{
+      height: 80%;
+  }
+  .more-container h2{
+    font-size: 30px;
+  }
+  .more-container p{
+    font-size: 15px;
+  }
+}
+
+@media (max-width:307px){
+  .more-container{
+      height: 75%;
+      width: 90%;
+  }
+}
+
