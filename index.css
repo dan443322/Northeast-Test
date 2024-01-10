@@ -1583,7 +1583,7 @@ header {
   
 }
 .backdrop.active{
-  z-index: 2;
+  z-index: 100;
   top: 50%;
   opacity: 1;
   transform: translate(-50% ,-50%) scale(1);
